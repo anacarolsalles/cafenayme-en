@@ -1,0 +1,46 @@
+h2 {
+  color: #fff;
+}
+
+h1,
+h3 {
+  color: #f7f7f7 !important;
+}
+
+div#home {
+  height: 80vh !important;
+  opacity: 1;
+}
+
+.p-animation {
+  color:#f7f7f7 !important;
+}
+
+.scale-4 {
+  transform: none !important;
+}
+
+#header .header-nav.header-nav-links.header-nav-light-text nav > ul > li > a, #header .header-nav.header-nav-line.header-nav-light-text nav > ul > li > a {
+  color: #000;
+  font-size: 18px !important;
+}
+#header .header-nav.header-nav-links.header-nav-light-text nav > ul > li > a:hover, #header .header-nav.header-nav-line.header-nav-light-text nav > ul > li > a:hover {
+  border-bottom: 3px #000 solid;
+}
+
+.overlay.overlay-op-8:hover:before, .overlay.overlay-op-8.overlay-show:before, .overlay.overlay-op-8.show:before {
+  opacity: 0.5;
+}
+
+.h2-animation {
+  color: #000 !important;
+}
+
+.bg-dark {
+  background-color: #084622 !important;
+}
+
+.bg-kraft {
+  background-image: url(https://img.freepik.com/fotos-premium/textura-de-papel-kraft-marrom-claro-para-o-fundo_8087-1877.jpg) !important;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 0.4)!important;
+}
