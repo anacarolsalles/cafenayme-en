@@ -60,14 +60,16 @@
 
 		<header id="header" class="header-narrow header-below-slider"
 			data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAtElement': '#header', 'stickySetTop': '0', 'stickyChangeLogo': false}">
-			<div class="header-body border-0 box-shadow-none pt-4 bg-dark">
+			<div class="header-body border-0 box-shadow-none bg-kraft appear-animation"
+				data-appear-animation="customHeaderAnimOne">
 				<div class="header-container container">
 					<div class="header-row">
 						<div class="header-column justify-content-start d-lg-none">
 							<div class="header-row mt-2">
 								<div class="header-logo">
 									<a href="index.html">
-										<img class="scale-5 top-4 ms-4" alt="Porto" width="80" height="54" src="img/demos/coffee/logo.png">
+										<img class="scale-5 top-4 ms-4" alt="Porto" width="80" height="54"
+											src="img/demos/coffee/logo.png" />
 									</a>
 								</div>
 							</div>
@@ -81,30 +83,38 @@
 										<nav class="collapse">
 											<ul class="nav nav-pills flex-column flex-lg-row" id="mainNav">
 												<li class="dropdown order-1">
-													<a class="dropdown-item" href="index.html#home">Início</a>
+													<a class="dropdown-item" data-hash data-hash-offset="0"
+														data-hash-offset-lg="92" href="index.html">HOME</a>
 												</li>
 												<li class="dropdown order-2">
-													<a class="dropdown-item" href="index.html#about">Sobre</a>
+													<a class="dropdown-item" data-hash data-hash-offset="0"
+														data-hash-offset-lg="92" href="#about">ABOUT</a>
 												</li>
 												<li class="dropdown order-3">
-													<a class="dropdown-item" href="index.html#reservations">Contato</a>
+													<a class="dropdown-item" data-hash data-hash-offset="0"
+														data-hash-offset-lg="92" href="#reservations">CONTACT</a>
 												</li>
 												<li class="dropdown order-5">
-													<a class="dropdown-item" href="index.html#menu">Produtos</a>
+													<a class="dropdown-item" data-hash data-hash-offset="0"
+														data-hash-offset-lg="92" href="#menu">PRODUCT</a>
 												</li>
 												<li class="dropdown order-6">
-													<a class="dropdown-item active" href="index.html#news">Receitas</a>
+													<a class="dropdown-item" data-hash data-hash-offset="0"
+														data-hash-offset-lg="92" href="demo-coffee-blog.html">RECIPES</a>
 												</li>
 												<li class="dropdown order-7">
-													<a class="dropdown-item" href="index.html#locations">Localização</a>
+													<a class="dropdown-item" data-hash data-hash-offset="0"
+														data-hash-offset-lg="92" href="#locations">LOCATION</a>
 												</li>
 												<li class="align-items-center d-none d-lg-flex order-4 px-5 mx-2 appear-animation"
-													data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250">
+													data-appear-animation="fadeInUpShorter"
+													data-appear-animation-delay="250">
 													<span class="header-logo">
 														<a href="index.html" class="w-100 text-center">
-															<img class="scale-4" alt="Porto - Demo Coffee" width="180" height="122"
-																data-sticky-width="82" data-sticky-height="40" data-sticky-top="72"
-																src="img/demos/coffee/logo.png">
+															<img class="scale-4" alt="Porto - Demo Coffee" width="180"
+																height="122" data-sticky-width="82"
+																data-sticky-height="40" data-sticky-top="72"
+																src="img/demos/coffee/logo.png" />
 														</a>
 													</span>
 												</li>
@@ -131,64 +141,33 @@
 					<div class="row justify-content-center mb-4">
 						<div class="col-md-9 col-lg-6 text-center">
 							<div class="overflow-hidden mb-3">
-								<h2 class="text-color-dark font-weight-bold text-9 mb-0 appear-animation"
-									data-appear-animation="maskUp">Receitas</h2>
+								<h2 class="h2-animation text-color-dark font-weight-bold text-9 mb-0 appear-animation animated maskUp appear-animation-visible"
+									data-appear-animation="maskUp">Recipes</h2>
 							</div>
 							<div class="divider divider-primary divider-small">
-								<hr class="mx-auto w-25 custom-h-1 appear-animation" data-appear-animation="dividerProgress25"
-									data-appear-animation-delay="200">
+								<hr class="mx-auto w-25 custom-h-1 appear-animation"
+									data-appear-animation="dividerProgress25" data-appear-animation-delay="200">
 							</div>
 							<p class="text-4 line-height-9 appear-animation" data-appear-animation="fadeInUpShorter"
-								data-appear-animation-delay="400">Separamos algmas receitas deliciosas para você testar em casa!</p>
+								data-appear-animation-delay="400">We separate some delicious recipes for you to try in your home!</p>
 						</div>
 					</div>
 					<div class="row">
 						<div class="card-columns">
+							
 							<div class="card custom-bg-color-1 border-0 mt-2 mb-3">
 								<div class="card-body px-5">
 									<h3
 										class="font-weight-normal text-transform-none line-height-4 text-6 negative-ls-1 pe-5 pb-1 mt-2 mb-2">
-										<a href="sorvetedecafe.html"
-											class="text-color-dark text-decoration-none custom-primary-font">Sorvete de Café</a>
+										<a href="broa.html"
+											class="text-color-dark text-decoration-none custom-primary-font">Grandma's bread Marly</a>
 									</h3>
 
-									<p class="font-weight-light text-2 mb-3">No calor, um sorvete cai bem né?! E se for de café é melhor
-										ainda! Prepare o seu cafezinho porque ele...</p>
+									<p class="font-weight-light text-2 mb-3">We decided to share our grandmother's bread recipe with you... There's no better accompaniment to...</p>
 									<div class="d-flex align-items-center mb-4">
-										<img src="img/avatars/avatar.jpg" width="20" class="img-fluid rounded-circle me-2" alt="" />
-										<span class="font-weight-semibold text-color-dark text-2">by Café Nayme</span>
-									</div>
-								</div>
-							</div>
-							<div class="card custom-bg-color-1 border-0 mt-2 mb-3">
-								<div class="card-body px-5">
-									<h3
-										class="font-weight-normal text-transform-none line-height-4 text-6 negative-ls-1 pe-5 pb-1 mt-2 mb-2">
-										<a href="nutellacoffee.html"
-											class="text-color-dark text-decoration-none custom-primary-font">Nutella Coffee</a>
-									</h3>
-
-									<p class="font-weight-light text-2 mb-3"> Bebidas geladas com café que alegram nosso verão! Que café e
-										chocolate combinam, já não é...</p>
-									<div class="d-flex align-items-center mb-4">
-										<img src="img/avatars/avatar.jpg" width="20" class="img-fluid rounded-circle me-2" alt="" />
-										<span class="font-weight-semibold text-color-dark text-2">by Café Nayme</span>
-									</div>
-								</div>
-							</div>
-							<div class="card custom-bg-color-1 border-0 mt-2 mb-3">
-								<div class="card-body px-5">
-									<h3
-										class="font-weight-normal text-transform-none line-height-4 text-6 negative-ls-1 pe-5 pb-1 mt-2 mb-2">
-										<a href="broa.html" class="text-color-dark text-decoration-none custom-primary-font">Broa da Vó
-											Marly</a>
-									</h3>
-
-									<p class="font-weight-light text-2 mb-3">Resolvemos dividir com vocês a receita da Broa da nossa
-										avó... Não tem acompanhamento melhor para...</p>
-									<div class="d-flex align-items-center mb-4">
-										<img src="img/avatars/avatar.jpg" width="20" class="img-fluid rounded-circle me-2" alt="" />
-										<span class="font-weight-semibold text-color-dark text-2">by Vovó</span>
+										<img src="img/avatars/avatar.jpg" width="20"
+											class="img-fluid rounded-circle me-2" alt="" />
+										<span class="font-weight-semibold text-color-dark text-2">by Grandma</span>
 									</div>
 								</div>
 							</div>
@@ -197,15 +176,15 @@
 								<div class="card-body px-5">
 									<h3
 										class="font-weight-normal text-transform-none line-height-4 text-6 negative-ls-1 pe-5 pb-1 mt-2 mb-2">
-										<a href="biscoito.html" class="text-color-dark text-decoration-none custom-primary-font">Biscoito de
-											leite condensado</a>
+										<a href="biscoito.html"
+											class="text-color-dark text-decoration-none custom-primary-font">Condensed milk biscuits</a>
 									</h3>
 
-									<p class="font-weight-light text-2 mb-3">Mais uma receita da Vó Marly, porque é um acompanhamento
-										maravilhoso para uma xícara de café Nayme. Simples e...</p>
+									<p class="font-weight-light text-2 mb-3">Grandma Marly's recipe, because it's a wonderful accompaniment to a cup of Nayme coffee. Simple and...</p>
 									<div class="d-flex align-items-center mb-4">
-										<img src="img/avatars/avatar.jpg" width="20" class="img-fluid rounded-circle me-2" alt="" />
-										<span class="font-weight-semibold text-color-dark text-2">by Vovó Marly</span>
+										<img src="img/avatars/avatar.jpg" width="20"
+											class="img-fluid rounded-circle me-2" alt="" />
+										<span class="font-weight-semibold text-color-dark text-2">by Grandma Marly</span>
 									</div>
 								</div>
 							</div>
@@ -214,32 +193,17 @@
 								<div class="card-body px-5">
 									<h3
 										class="font-weight-normal text-transform-none line-height-4 text-6 negative-ls-1 pe-5 pb-1 mt-2 mb-2">
-										<a href="cafegelado.html" class="text-color-dark text-decoration-none custom-primary-font">Café
-											gelado</a>
+										<a href="bolo.html"
+											class="text-color-dark text-decoration-none custom-primary-font">Grandma's cake Marly</a>
 									</h3>
 
-									<p class="font-weight-light text-2 mb-3">Resolvemos compartilhar com vocês algumas receitas de bebidas
-										refrescantes que tem como principal ingrediente o café, e a de hoje vai ser o tradicional café
-										gelado...</p>
-									<div class="d-flex align-items-center mb-4">
-										<img src="img/avatars/avatar.jpg" width="20" class="img-fluid rounded-circle me-2" alt="" />
-										<span class="font-weight-semibold text-color-dark text-2">by Café Nayme</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="card custom-bg-color-1 border-0 mt-2 mb-3">
-								<div class="card-body px-5">
-									<h3
-										class="font-weight-normal text-transform-none line-height-4 text-6 negative-ls-1 pe-5 pb-1 mt-2 mb-2">
-										<a href="bolo.html" class="text-color-dark text-decoration-none custom-primary-font">Bolo</a>
-									</h3>
-
-									<p class="font-weight-light text-2 mb-3">Aquela receita de bolo simples que agrada a todos os gostos!
+									<p class="font-weight-light text-2 mb-3">That simple cake recipe that pleases all tastes...
+										Soft, fragrant and simply delicious!
 									</p>
 									<div class="d-flex align-items-center mb-4">
-										<img src="img/avatars/avatar.jpg" width="20" class="img-fluid rounded-circle me-2" alt="" />
-										<span class="font-weight-semibold text-color-dark text-2">by Vovó Marly</span>
+										<img src="img/avatars/avatar.jpg" width="20"
+											class="img-fluid rounded-circle me-2" alt="" />
+										<span class="font-weight-semibold text-color-dark text-2">by Grandma Marly</span>
 									</div>
 								</div>
 							</div>
@@ -257,7 +221,8 @@
 				<div class="row mb-5 pb-4">
 					<div class="col text-center">
 						<a href="demo-coffee-blog.html" class="text-decoration-none">
-							<img src="img/demos/coffee/logo-light.png" class="img-fluid" width="195" height="132" alt="" />
+							<img src="img/demos/coffee/logo-light.png" class="img-fluid" width="195" height="132"
+								alt="" />
 						</a>
 					</div>
 				</div>
@@ -280,7 +245,8 @@
 										class="fab fa-facebook-f"></i></a>
 							</li>
 							<li class="social-icons-twitter">
-								<a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+								<a href="http://www.twitter.com/" target="_blank" title="Twitter"><i
+										class="fab fa-twitter"></i></a>
 							</li>
 							<li class="social-icons-linkedin">
 								<a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i
