@@ -32,6 +32,8 @@
     href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800%7CPlayfair+Display&display=swap"
     rel="stylesheet" type="text/css" />
 
+  <meta name="facebook-domain-verification" content="cmwx92palpelre4yvluen60c8cup55" />
+
   <!-- Vendor CSS -->
   <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
   <link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css" />
@@ -362,7 +364,7 @@
 
             function ShopifyBuyInit() {
               var client = ShopifyBuy.buildClient({
-                domain: '30cbd3-2.myshopify.com',
+                domain: 'shop.cafenayme.com',
                 storefrontAccessToken: '038fc6a0675f49147e5835e02f50add2',
               });
               ShopifyBuy.UI.onReady(client).then(function (ui) {
@@ -372,6 +374,41 @@
                   moneyFormat: '%24%7B%7Bamount%7D%7D',
                   options: {
                     "product": {
+                      "events": {
+                        "afterInit": function(component) {
+                          const product = ui.components.product[0].model;
+                          window.parent.dataLayer.push({
+                            event: 'int_product_load',
+                            data: {
+                              items: [{
+                                item_name: product.title,
+                                item_id: '8315320762665',
+                                price: product.variants[0].price.amount,
+                                item_brand: 'Nayme Café',
+                                item_category: 'Coffee',
+                                item_category2: 'Special Coffee',
+                              }]
+                            }
+                          })
+                        },
+                      },
+                      "DOMEvents": {
+                        'click [data-element="product.button"]': function(...all) {
+                          const product = ui.components.product[0].model;
+                          window.parent.dataLayer.push({ event: 'add_to_cart', data: {
+                            items: [{
+                              item_name: product.title,
+                              item_id: '8315320762665',
+                              price: product.variants[0].price.amount,
+                              quantity: 1,
+                              item_brand: 'Nayme Café',
+                              item_category: 'Coffee',
+                              item_category2: 'Special Coffee',
+                              item_list_name: 'List of products'
+                            }]
+                          } });
+                        },
+                      },
                       "styles": {
                         "product": {
                           "@media (min-width: 601px)": {
@@ -460,6 +497,25 @@
                     },
                     "option": {},
                     "cart": {
+                      "DOMEvents": {
+                        'click [data-element="cart.button"]': function(evt) {
+                          const cart = ui.components.cart[0].model;
+                          const items = cart.lineItems.map(item => ({
+                            item_name: item.title,
+                            item_id: '8315320762665',
+                            price: item.variant.price.amount,
+                            quantity: item.quantity,
+                            item_brand: 'Nayme Café',
+                            item_category: 'Coffee',
+                            item_category2: 'Special Coffee',
+                            item_list_name: 'List of products'
+                          }));
+                          window.parent.dataLayer.push({ event: 'view_cart', data: {
+                            items,
+                            subtotal: cart.lineItemsSubtotalPrice.amount
+                          } });
+                        }
+                      },
                       "styles": {
                         "title": {
                           "color": "#313131"
