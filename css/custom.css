@@ -28,6 +28,10 @@ div#home {
   border-bottom: 3px #000 solid;
 }
 
+#header .header-nav-main.header-nav-main-mobile-dark:before {
+  background-color: transparent;
+}
+
 .overlay.overlay-op-8:hover:before, .overlay.overlay-op-8.overlay-show:before, .overlay.overlay-op-8.show:before {
   opacity: 0.5;
 }
@@ -43,4 +47,12 @@ div#home {
 .bg-kraft {
   background-image: url(https://img.freepik.com/fotos-premium/textura-de-papel-kraft-marrom-claro-para-o-fundo_8087-1877.jpg) !important;
   box-shadow: 0 10px 20px rgb(0 0 0 / 0.4)!important;
+}
+
+#footer p {
+  color: #fff;
+}
+
+#footer .footer-copyright p {
+  color: #fff;
 }
